@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.App{
+  width: 480px;
+  height: 800px;
+  margin: 2rem auto;
+  background-image: url(img/base.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2 ease;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+  cursor: pointer;
+}
+
+.App:hover{
+  box-shadow: 3px 3px 10px black;
+
+}
+
+.App.cold{
+  background-image: linear-gradient(to bottom,rgba(88, 113, 254, 0.67),
+  rgba(0,0,0,0.75)),url(img/cold.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+.App.rain{
+  background-image: linear-gradient(to bottom,rgba(219, 226, 234, 0.174),
+  rgba(0,0,0,0.75)),url(img/rain.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+main {
+  min-height: 100vh;
+  padding: 25px;
+  
+}
+
+.search-container{
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-bar{
+  color: black;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px black;
+
+}
+.search-container .search-bar:focus{
+  background-color: white;
+}
+
+
+
+.location-container{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 5px black;
+}
+.location-container .date{
+  color: white;
+  font-size: 20px;
+
+}
+
+.weather-container{
+  text-align: center;
+}
+
+.weather-container .temperature{
+  color:white;
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 25px;
+  font-size: 100px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px black;
+}
+
+.weather-container .weather{
+  color:white;
+  font-size:50px;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px black;
+}
+
+
+
+
+
+
+
